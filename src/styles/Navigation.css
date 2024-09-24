@@ -1,4 +1,6 @@
 /* src/styles/Navigation.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 .nav {
     display: flex;
@@ -48,4 +50,11 @@
   
   .nav-link:hover {
     color: #0056b3; /* Darker color on hover */
+  }
+  
+  .instagram-logo {
+    font-family: 'Pacifico', cursive; /* Apply the imported font */
+    font-size: 18px; /* Adjust the font size */
+    color: #262626; /* Instagram logo color */
+    margin-bottom: 20px; /* Space below the logo */
   }

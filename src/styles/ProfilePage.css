@@ -10,7 +10,7 @@
     display: flex; /* Flex layout for the header */
     align-items: center; /* Center items vertically */
     margin-bottom: 20px; /* Space between header and content */
-    padding-left: 120px;
+    padding-left: 140px;
   }
   
   .profile-header-image {

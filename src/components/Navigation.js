@@ -54,6 +54,7 @@ const Navigation = () => {
 // };
 <nav className="nav">
       <div className="nav-items">
+        <p className="instagram-logo">instagram_clone</p>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
