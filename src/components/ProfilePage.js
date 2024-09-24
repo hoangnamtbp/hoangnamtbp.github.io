@@ -1,9 +1,10 @@
 // src/components/ProfilePage.js
-import React from 'react';
+import React, { useState } from 'react'; 
 import ImageLoader from './ImageLoader'; // Import the ImageLoader component to show images
 import '../styles/ProfilePage.css'; // Import the CSS for styling the profile page
 
 const ProfilePage = () => {
+    const [postCount, setPostCount] = useState(0);
   return (
     <div className="profile-page">
       <div className="profile-header">
@@ -16,7 +17,7 @@ const ProfilePage = () => {
           <h2 className="profile-header-username">benny@cat</h2> {/* Replace with actual username */}
           <div className="profile-header-stats">
             <span>
-              <strong>24</strong> posts
+              <strong>{postCount}</strong> posts
             </span>
             <span>
               <strong>456k</strong> followers
@@ -35,7 +36,7 @@ const ProfilePage = () => {
         </div>
       </div>
       <div className="profile-content">
-        <ImageLoader /> {/* Display the image grid or other profile-related content */}
+        <ImageLoader setPostCount={setPostCount} /> {/* Display the image grid or other profile-related content */}
       </div>
     </div>
   );

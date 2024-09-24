@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PostGrid from './PostGrid';
 import Modal from './Modal';
 
@@ -6,7 +6,7 @@ const importAllImages = (requireContext) => {
     return requireContext.keys().map(requireContext);
 };
 
-const images = importAllImages(require.context('../assets', false, /\.(jpeg|jpg|png|JPEG)$/));
+const images = importAllImages(require.context('../assets', false, /\.(jpeg|jpg|png|JPEG|PNG)$/));
 console.log(images);
 
 
@@ -20,10 +20,17 @@ console.log(images);
 //     return <PostGrid posts={posts} />; // Pass the posts to the PostGrid component
 //   };
 
-const ImageLoader = () => {
+const ImageLoader = ({setPostCount}) => {
   // State to manage selected post and modal visibility
   const [selectedPost, setSelectedPost] = useState(null);
   const [isModalOpen, setModalOpen] = useState(false);
+
+    // Pass the number of posts to the parent component
+  useEffect(() => {
+    if (setPostCount) { // Check if setPostCount is passed as a prop
+      setPostCount(images.length);
+    }
+  }, [setPostCount]);
 
   // Create an array of post objects with image URLs and captions
   const posts = images.map((imageUrl, index) => ({
@@ -61,4 +68,4 @@ const ImageLoader = () => {
   );
 };
   
-  export default ImageLoader;
+export default ImageLoader;
