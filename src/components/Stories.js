@@ -12,7 +12,7 @@ const Stories = ({ stories }) => {
             style={storyImageStyle}
             title={story.name}
           />
-          
+          <p style={storyNameStyle}>{story.name}</p> {/* Name underneath the story image */}
         </div>
       ))}
     </div>
@@ -42,5 +42,17 @@ const storyImageStyle = {
   cursor: 'pointer',
   transition: 'border-color 0.3s ease',
 };
+
+const storyNameStyle = {
+  marginTop: '5px', // Space between image and name
+  fontSize: '12px', // Adjust font size as needed
+  color: '#333', // Text color
+  textAlign: 'center', // Center align the name text
+  maxWidth: '60px', // Limit the width of the name text to match the image width
+  overflow: 'hidden', // Hide overflow text
+  textOverflow: 'ellipsis', // Add ellipsis if text overflows
+  whiteSpace: 'nowrap', // Prevent text from wrapping
+};
+
 
 export default Stories;

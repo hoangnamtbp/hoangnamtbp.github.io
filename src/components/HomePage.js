@@ -7,8 +7,8 @@ import '../styles/HomePage.css';
 const HomePage = () => {
     const stories = [
         { image: './assets/scene00001.png' , name: 'John' },
-        { image: 'https://via.placeholder.com/50', name: 'Jane' },
-        { image: 'https://via.placeholder.com/50', name: 'Mark' },
+        { image: './assets/IMG_4373.JPEG', name: 'Jane' },
+        { image: './assets/IMG_4248.JPEG', name: 'Mark' },
       ];
   return (
     <div className="home-page">
