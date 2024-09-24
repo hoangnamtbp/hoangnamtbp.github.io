@@ -1,0 +1,10 @@
+/* src/components/PostGrid.css */
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    padding: 20px;
+    margin-left: 100px;
+  }
+  

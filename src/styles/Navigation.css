@@ -1,0 +1,41 @@
+/* src/styles/Navigation.css */
+
+.nav {
+    display: flex;
+    flex-direction: column; /* Default to vertical for desktop */
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Keep it fixed on the left side of the screen */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height on the left side for desktop */
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+  }
+  
+  .profile-container {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  

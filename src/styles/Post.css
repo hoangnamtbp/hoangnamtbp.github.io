@@ -1,0 +1,24 @@
+/* src/components/Post.css */
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 500px; /* Optional: restrict post width for a more uniform layout */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for Instagram-like effect */
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures image maintains aspect ratio and fits within the container */
+  }
+  
+  .post-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
