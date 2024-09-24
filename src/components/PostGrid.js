@@ -1,5 +1,7 @@
 // import Post from './Post';
 import '../styles/PostGrid.css';
+// import React from 'react';
+
 
 const PostGrid = ({ posts, onImageClick }) => {
     return (
