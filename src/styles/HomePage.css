@@ -1,0 +1,21 @@
+/* src/styles/HomePage.css */
+
+.home-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    padding-left: 100px; 
+  }
+  
+  .home-header {
+    text-align: center; /* Center the header */
+    margin-bottom: 20px; /* Space between header and content */
+  }
+  
+  .home-content {
+    text-align: center; /* Center the content */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  }
+  

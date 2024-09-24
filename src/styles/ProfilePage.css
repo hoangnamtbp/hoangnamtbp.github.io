@@ -1,0 +1,52 @@
+/* src/styles/ProfilePage.css */
+
+.profile-page {
+    padding: 20px; /* Add padding around the profile page */
+    background-color: #fff; /* White background */
+    
+  }
+  
+  .profile-header {
+    display: flex; /* Flex layout for the header */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space between header and content */
+    padding-left: 120px;
+  }
+  
+  .profile-header-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid #dbdbdb;
+    margin-right: 30px; /* Space between image and info */
+  }
+  
+  .profile-header-info {
+    flex-grow: 1; /* Allow info to grow */
+  }
+  
+  .profile-header-username {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-header-stats {
+    display: flex;
+    gap: 20px; /* Space between stats */
+    margin-bottom: 10px;
+  }
+  
+  .profile-header-bio {
+    font-size: 14px;
+  }
+  
+  .profile-header-bio strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-content {
+    padding-top: 20px;
+  }
+  

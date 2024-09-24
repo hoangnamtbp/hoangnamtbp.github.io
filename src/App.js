@@ -1,7 +1,10 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 // import Post from './components/Post';
+import HomePage from './components/HomePage';
+import ProfilePage from './components/ProfilePage';
 import Navigation from './components/Navigation';
 import Stories from './components/Stories';
 import "./App.css";
@@ -21,29 +24,42 @@ const App = () => {
 
 
   return (
-    <div>
-      <Header /> 
-      <Navigation
-        profileImage='./assets/profile.JPEG'
-      />
+    // <div>
+    //   <Header /> 
+    //   <Navigation
+    //     profileImage='./assets/profile.JPEG'
+    //   />
 
-      <div style={{ marginLeft: '100px', marginTop: '10px' }}>
-        <Stories stories={stories} />
+    //   <div style={{ marginLeft: '100px', marginTop: '10px' }}>
+    //     <Stories stories={stories} />
+    //   </div>
+
+
+    //   {/* <div style={feedStyle}>
+    //     {posts.map((post, index) => (
+    //       <Post key={index} post={post} />
+    //     ))}
+    //   </div> */}
+    //   {/* <div className="post-grid">
+    //     {posts.map((post, index) => (
+    //       <Post key={index} post={post} />
+    //     ))}
+    //   </div> */}
+    //   <ImageLoader />
+    // </div>
+    <Router>
+      <div>
+        {/* Render the Navigation component */}
+        <Navigation />
+
+        {/* Define Routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} /> {/* Home page route */}
+          <Route path="/profile" element={<ProfilePage />} /> {/* Profile page route */}
+          {/* Add other routes here if needed */}
+        </Routes>
       </div>
-
-
-      {/* <div style={feedStyle}>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
-        ))}
-      </div> */}
-      {/* <div className="post-grid">
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
-        ))}
-      </div> */}
-      <ImageLoader />
-    </div>
+    </Router>
   );
 };
 
