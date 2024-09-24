@@ -38,4 +38,14 @@
     align-items: center;
     width: 100%;
   }
+
+  .nav-link.active {
+    color: #fff; /* Active link text color */
+    background-color: #007bff; /* Active link background */
+    border-radius: 8px; /* Round corners for the active link */
+    padding: 10px; /* Add padding to active link */
+  }
   
+  .nav-link:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
