@@ -22,10 +22,16 @@
     overflow: auto; /* Scroll if content exceeds modal */
   }
   
-  .modal-image {
+  /* .modal-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
+  } */
+  .modal-image {
+    max-width: 100%; /* Scale down the image to fit modal width */
+    max-height: 80vh; /* Scale down the image to fit modal height */
+    object-fit: contain; /* Keep the aspect ratio and fit within the container */
+    margin-bottom: 10px; /* Space between image and caption */
   }
   
   .modal-caption {

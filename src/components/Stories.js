@@ -12,6 +12,7 @@ const Stories = ({ stories }) => {
             style={storyImageStyle}
             title={story.name}
           />
+          
         </div>
       ))}
     </div>

@@ -1,7 +1,8 @@
 // src/components/HomePage.js
 // import React from 'react';
-import '../styles/HomePage.css'; // Import the CSS for styling the home page
+import { Link } from 'react-router-dom';
 import Stories from './Stories';
+import '../styles/HomePage.css';
 
 const HomePage = () => {
     const stories = [
@@ -13,7 +14,8 @@ const HomePage = () => {
     <div className="home-page">
       <header className="home-header">
         <h1>Welcome to My instagram clone</h1>
-        <p>click on profile to see pictures</p>
+        <p>click on <Link to="/profile" className="profile-link"> profile
+          </Link>{' '} to see pictures</p>
       </header>
       
       <Stories stories={stories} />
