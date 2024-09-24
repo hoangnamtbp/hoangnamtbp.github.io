@@ -3,12 +3,29 @@
 import { Link } from 'react-router-dom';
 import Stories from './Stories';
 import '../styles/HomePage.css';
+import Feed from './Feed';
 
 const HomePage = () => {
     const stories = [
         { image: './assets/scene00001.png' , name: 'John' },
         { image: './assets/IMG_4373.JPEG', name: 'Jane' },
         { image: './assets/IMG_4248.JPEG', name: 'Mark' },
+      ];
+
+    const postsData = [
+        {
+          imageUrl: './posts/IMG_4518.JPEG', // Replace with actual post image URL
+          caption: 'First post!', // Replace with actual caption
+        },
+        {
+          imageUrl: './posts/IMG_6126.PNG',
+          caption: 'Second post!',
+        },
+        {
+          imageUrl: './posts/IMG_6197.JPEG',
+          caption: 'Another great post!',
+        },
+        // Add more posts as needed
       ];
   return (
     <div className="home-page">
@@ -19,6 +36,7 @@ const HomePage = () => {
       </header>
       
       <Stories stories={stories} />
+      {/* <Feed posts={postsData} /> */}
 
       <div className="home-content">
         {/* Add your home page content here */}

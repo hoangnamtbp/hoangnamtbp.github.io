@@ -1,0 +1,12 @@
+/* src/styles/Feed.css */
+
+.feed {
+  display: flex;
+  flex-direction: column; /* Stack posts vertically */
+  align-items: center; /* Center the feed */
+  gap: 20px; /* Space between posts */
+  margin: 0 auto; /* Center the feed container horizontally */
+  padding: 20px; /* Padding around the feed */
+  max-width: 550px; /* Limit the maximum width of the feed */
+  width: 100%; /* Ensure the feed takes full width up to the max-width */
+}

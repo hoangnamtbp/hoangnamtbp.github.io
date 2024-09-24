@@ -1,24 +1,32 @@
-/* src/components/Post.css */
+/* src/styles/Post.css */
+
 .post {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    max-width: 500px; /* Optional: restrict post width for a more uniform layout */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for Instagram-like effect */
-  }
-  
-  .post-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover; /* Ensures image maintains aspect ratio and fits within the container */
-  }
-  
-  .post-caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-  }
-  
+  background-color: #fff; /* White background for each post */
+  border: 1px solid #dbdbdb; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden; /* Clip content that overflows */
+  margin-bottom: 20px; /* Space between posts */
+  max-width: 500px; /* Set maximum width for the post container */
+  width: 100%; /* Ensure post takes full width up to max-width */
+  margin: 0 auto; /* Center the post container horizontally */
+}
+
+.post-image-container {
+  width: 100%; /* Full width of the post container */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow */
+  display: flex; /* Enable flex to center content */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  position: relative; /* Ensure the container is positioned correctly */
+}
+
+.post-image {
+  width: 100%; /* Full width for the image */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; /* Limit the maximum width of the image */
+  object-fit: cover; /* Cover the container without distortion */
+  display: block; /* Remove bottom margin */
+  position: relative; /* Position the image relative to its container */
+}
