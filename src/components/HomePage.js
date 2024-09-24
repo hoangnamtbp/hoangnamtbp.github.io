@@ -3,7 +3,7 @@
 import { Link } from 'react-router-dom';
 import Stories from './Stories';
 import '../styles/HomePage.css';
-import Feed from './Feed';
+// import Feed from './Feed';
 
 const HomePage = () => {
     const stories = [
