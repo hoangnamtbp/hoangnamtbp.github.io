@@ -3,7 +3,7 @@
 import { Link } from 'react-router-dom';
 import Stories from './Stories';
 import '../styles/HomePage.css';
-// import Feed from './Feed';
+import Feed from './Feed';
 
 const HomePage = () => {
     const stories = [
@@ -36,7 +36,7 @@ const HomePage = () => {
       </header>
       
       <Stories stories={stories} />
-      {/* <Feed posts={postsData} /> */}
+      <Feed posts={postsData} />
 
       <div className="home-content">
         {/* Add your home page content here */}
